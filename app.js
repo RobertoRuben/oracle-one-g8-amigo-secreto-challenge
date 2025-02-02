@@ -24,3 +24,18 @@ function updateFriendList(){
     }
     
 }
+
+function sortFriends(){
+    if (friendList.length === 0){
+        alert('No hay amigos para sortear');
+        return;
+    }else if (friendList.length === 1){
+        alert('Para realizar el sorteo se necesitan al menos dos amigos');
+        return;
+    }
+    let index = Math.floor(Math.random() * friendList.length);
+    let selectedFriend = friendList[index];
+    document.getElementById('resultado').innerHTML = 'El amigo sorteado es: ' + selectedFriend;
+    friendList = [];
+    updateFriendList();
+}
