@@ -11,4 +11,16 @@ function addFriend() {
     }
     friendList.push(friendName);
     friendNameInput.value = '';
+    updateFriendList();
+}
+
+function updateFriendList(){
+    let friendListElement = document.getElementById('listaAmigos');
+    friendListElement.innerHTML = '';
+    for(let i = 0; i < friendList.length; i++){
+        let friendElement = document.createElement('li');
+        friendElement.textContent = friendList[i];
+        friendListElement.appendChild(friendElement);
+    }
+    
 }
