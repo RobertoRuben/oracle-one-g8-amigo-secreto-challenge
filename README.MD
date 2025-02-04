@@ -1,4 +1,4 @@
-# 🎉 Secret Santa - Oracle ONE G8 Challenge
+# 🎉 Secret Friend - Oracle ONE G8 Challenge
 
 > 👋 Hello! This is my solution to the Secret Santa challenge proposed in Oracle ONE Next Education. The project implements a random draw system to organize Secret Santa games in a simple and fun way.
 
